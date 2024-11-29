@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DISCORD.wsgi.app'
+WSGI_APPLICATION = 'DISCORD.wsgi.application'
 
 
 # Database
