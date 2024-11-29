@@ -2,11 +2,9 @@
   "builds": [
     {
       "src": "DISCORD/wsgi.py",
-      "use": "@vercel/python",
+      "use": "@ardnt/vercel-python-wsgi",
       "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.11.5",
-        "buildCommand": "bash build.sh"
+        "maxLambdaSize": "15mb"
       }
     }
   ],
@@ -14,10 +12,6 @@
     {
       "src": "/(.*)",
       "dest": "DISCORD/wsgi.py"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
     }
   ]
 }
